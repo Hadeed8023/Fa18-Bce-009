@@ -8,9 +8,10 @@ import UsedCar1 from './routes/UsedCar1.js';
 import NewCar1 from './routes/NewCar1.js';
 import cookieParser from "cookie-parser";
 import BookedCar from './routes/BookedCar.js'
+import env from 'dotenv'
 import del from './routes/del.js';
 import  jwt  from "jsonwebtoken"
-
+env.config()
 
 
 
@@ -43,7 +44,7 @@ app.use("/UsedCars",UsedCar1);
 app.use("/NewCars",NewCar1);
 
 app.use("/Booking",BookedCar);
-app.listen(5000)
+app.listen(process.env.PORT||5000)
 });
 
 
