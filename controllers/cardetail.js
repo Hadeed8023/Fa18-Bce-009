@@ -1,6 +1,5 @@
 import carsModel from "../models/cardetail.js";
 import applicantsModel from "../models/applicants.js"
-import { resmessage } from "../middleware.js/constant.js";
 import bcrypt from "bcrypt";
 import jwt from 'jsonwebtoken';
 

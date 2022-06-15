@@ -8,7 +8,6 @@ import UsedCar1 from './routes/UsedCar1.js';
 import NewCar1 from './routes/NewCar1.js';
 import cookieParser from "cookie-parser";
 import BookedCar from './routes/BookedCar.js'
-require('dotenv').config()
 import del from './routes/del.js';
 import  jwt  from "jsonwebtoken"
 
@@ -22,7 +21,7 @@ const url="mongodb+srv://hadeed:hadeed123@cluster0.yd8s2us.mongodb.net/?retryWri
 
 mongoose.connect(url,{useNewUrlParser:true, useUnifiedTopology:true}).then(()=>console.log("Database Connected"));
 
-app.listen(process.env.PORT || 5000)
+app.listen(5000)
 
 //Now using Middleware
 
