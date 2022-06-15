@@ -8,9 +8,8 @@ import UsedCar1 from './routes/UsedCar1.js';
 import NewCar1 from './routes/NewCar1.js';
 import cookieParser from "cookie-parser";
 import BookedCar from './routes/BookedCar.js'
+require('dotenv').config()
 import del from './routes/del.js';
-import { DotenvConfigOptions } from 'dotenv';
-import { DotenvConfigOutput } from 'dotenv';
 import  jwt  from "jsonwebtoken"
 
 
