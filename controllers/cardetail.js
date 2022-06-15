@@ -44,10 +44,10 @@ export const getlogin = async (req, res)=>{
             const accessToken = `Bearer ${token}`;
             console.log(`JWT_TOKEN_CREATED | ${email} |${accessToken}`);
 
-             res.cookie("Jwt",token,{
-                 expires: new Date(Date.now() + 5000),
-                  httpOnly:true
-             })
+            //  res.cookie("Jwt",token,{
+            //      expires: new Date(Date.now() + 5000),
+            //       httpOnly:true
+            //  })
 
            }
        
